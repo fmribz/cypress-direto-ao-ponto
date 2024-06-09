@@ -14,3 +14,7 @@
 * Pelo terminal, navegue ate o diretório desta pasta
 * Inicialize um projeto Node usando o comando:
   > npm init --yes (--yes ignora as perguntas padrão de inicialização do node)
+* Instalar o cypress
+  > npm install -D cypress (instala a última versão)
+  
+  > nmp install -D cypress@<versão>
