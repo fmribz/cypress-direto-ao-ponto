@@ -8,6 +8,7 @@
   - Deverá aparece a versão do node instalada.
     > v22.2.0
 * Instalar um editor de código, usarei o [VSCode](https://code.visualstudio.com/)
+  - Obs: recomendações de [extensões para o VSCode](https://www.youtube.com/watch?v=JGVB97ns0NQ&ab_channel=Agilizei) pelo Agiliza 
 
 ## Criando o projeto e instalando o cypress
 * Crie uma pasta que será usada para o projeto.
