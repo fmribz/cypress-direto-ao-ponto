@@ -1,10 +1,19 @@
 //agrupa o cenário de testes
 describe('Transações', () => {
-    //cada caso de teste
-    it('Cadastrar uma entrada', () => {
+
+    //hooks são trechos de código para executar antes ou depois
+    //de cada teste ou de todos
+    //before: executa uma vez ANTES de todos os testes
+    //after: executa uma vez DEPOIS de todos os testes
+    //beforeEach:  executa uma vez ANTES de cada teste
+    //afterEach:  executa uma vez ANTES de cada teste
+    beforeEach(() => {
         //visita a url a ser testada
         cy.visit('https://devfinance-agilizei.netlify.app/');
-        
+    });
+
+    //cada caso de teste
+    it('Cadastrar uma entrada', () => {
         //realiza a função criarTransacao
         criarTransacao('Barra', 20);
 
@@ -16,9 +25,6 @@ describe('Transações', () => {
     });
 
     it('Cadastrar uma saída', () => {
-        //visita a url a ser testada
-        cy.visit('https://devfinance-agilizei.netlify.app/');
-        
         //realiza a função criarTransacao
         criarTransacao('Barra', -15);
 
