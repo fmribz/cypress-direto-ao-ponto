@@ -33,3 +33,6 @@ Comandos e detalhes para conhecer a estrutura do cypress.
   - **pasta e2e**: Pasta responsavel por armazenar os nossos testes/spec.
   - **pasta fixtures**: armazena arquivos que possuem dados ou scripts que geram dados para testes.
   - **pasta suppor**: armazena arquivos auxiliares na execução dos testes
+
+* Executando os testes pelo terminal:
+  >npx cypress run
