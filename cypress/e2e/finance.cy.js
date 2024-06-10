@@ -38,11 +38,18 @@ describe('Transações', () => {
     it('Excluir uma transação', () => {
         criarTransacao('Cos', 25);
         criarTransacao('Barra', 20);
+
         //pega o pai do elemento que contenha os valores descritos
         //e encontra o que for desejado
+        //cy.contains('.description', 'Barra')
+        //  .parent()
+        //  .find('img')
+        //  .click();
+
+        //pega o elemento irmão
         cy.contains('.description', 'Barra')
-          .parent()
-          .find('img')
+          .siblings() // elementos irmãos
+          .children('img') //filho do elemento irmão
           .click();
 
         cy.get('tbody tr').should('have.length', 1);
