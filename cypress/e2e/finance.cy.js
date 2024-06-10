@@ -34,6 +34,19 @@ describe('Transações', () => {
         //cy.get('.income').should('have.text', 'R$ 20,00');
         cy.get('.date').should('have.text','09/06/2024');
     });
+
+    it('Excluir uma transação', () => {
+        criarTransacao('Cos', 25);
+        criarTransacao('Barra', 20);
+        //pega o pai do elemento que contenha os valores descritos
+        //e encontra o que for desejado
+        cy.contains('.description', 'Barra')
+          .parent()
+          .find('img')
+          .click();
+
+        cy.get('tbody tr').should('have.length', 1);
+    });
 });
 
 function criarTransacao(descricao, valor){
