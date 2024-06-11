@@ -36,3 +36,6 @@ Comandos e detalhes para conhecer a estrutura do cypress.
 
 * Executando os testes pelo terminal:
   >npx cypress run
+
+* Incluindo o comando acima no "package.json", na opção "teste", basta executar o comando a seguir para executar todos os testes:
+  >npm test
